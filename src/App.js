@@ -1,38 +1,39 @@
 import './App.css';
+import Header from "./components/index/header";
+import Menu from "./components/index/menu";
+import Contant from "./components/index/contant";
+import Footer from "./components/index/footer"
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       
-        <p>
-          로고
-          HAPPY BABY FOOD
+    <Router>
+      <Switch>
+        <Route path="/home">
+          <div className="App_index">
 
-          로그인 
-          1. 아기 사진을 올려주세요
-          2. 아기 이름 나이 성별 
-          3. 아기 알러지체크
-          4. 1일 - 몇끼 (가격)
-          5. 주 - 몇일 (가격)
-          6. 주수 선택 - 시작일 선택123
+            <div className="Advertising">
+              메인 이벤트 이미지
+            </div>
 
-          완료 페이지
-          사진 이름 나이
-          알러지 
-          1일 3끼 주 3회분 
-          
-          맞으면 ok
+            <div className="HBF_APP">
+              <Header />
+              <Menu />
+              <Contant />
+            </div>
+          </div>
+        </Route>
 
-          -인트로 이동
-          메인 이유식 정보 +  내용 + 사진
-          섹션 2 - 유아 용품
-          섹션 3 - 간식 
+        <Route path="/search">검색</Route>
 
-        </p>
+        <Route path="/event">이벤트</Route>
 
-      </header>
-    </div>
+        <Route path="/my">나의 페이지</Route>
+      </Switch>
+
+      <Footer/>
+    </Router>
+   
   );
 }
 
