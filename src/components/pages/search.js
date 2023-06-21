@@ -1,9 +1,7 @@
-import React from "react";
+import React from 'react'
 
-export default function () {
-    return (
-        <div>
-            검색페이지
-        </div>
-    );
+export default function search() {
+  return (
+    <div>search</div>
+  )
 }

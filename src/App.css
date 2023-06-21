@@ -1,5 +1,5 @@
 *{margin: 0px; padding: 0px; border: 0px; font-style: normal; font-weight: 300; font-size: 13px; color: #111827;font-family: 'Lato', sans-serif;}
-
+a.active div{color:#F97A2E; font-weight: bold;}
 .material-symbols-outlined{cursor: pointer;}
 .App_index {display: flex; justify-content: center; gap: 100px; width: 100vw; height: 100vh;}
 

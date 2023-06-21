@@ -1,22 +1,22 @@
 let menuList = [
     {
-        menu: "홈",
-        title: "아무거나",
+        menu: "메뉴1",
+        page: "menu1",
         id:"1",
     },
     {
-        menu: "메뉴1",
-        title: "아무거나",
+        menu: "메뉴2",
+        page: "menu2",
         id: "2",
     },
     {
-        menu: "메뉴2",
-        title: "아무거나",
+        menu: "메뉴3",
+        page: "menu3",
         id: "3",
     },
     {
-        menu: "메뉴3",
-        title: "아무거나",
+        menu: "메뉴4",
+        page: "menu4",
         id: "4",
     },
 ];
@@ -26,7 +26,7 @@ export {menuList};
 let footerList = [
     {
         menu: "home",
-        page: "home",
+        page: "/",
         id: "1",
     },
     {
