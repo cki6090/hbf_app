@@ -1,21 +1,37 @@
-*{margin: 0px; padding: 0px; border: 0px; font-style: normal; font-weight: 300; font-size: 13px; color: #111827;font-family: 'Lato', sans-serif;}
+*{margin: 0px; padding: 0px; border: 0px; font-style: normal; font-weight: 300; font-size: 14Spx; color: #111827;font-family: 'Lato', sans-serif; letter-spacing: -0.5px;}
 a.active div{color:#F97A2E; font-weight: bold;}
-.material-symbols-outlined{cursor: pointer;}
+.material-symbols-outlined{cursor: pointer; vertical-align: bottom;vertical-align: bottom; }
 .App_index {display: flex; justify-content: center; gap: 100px; width: 100vw; height: 100vh;}
 
 .Advertising{width: 340px; height: 100%; box-shadow: 0px 0px 16px rgb(50 50 50 / 12%); border-radius: 5px;display: flex; justify-content: center; gap: 5px; align-items: center;}
 
 .HBF_APP{display: flex; flex-direction: column; justify-content: center; width: 400px; height: 100%; box-shadow: 0px 0px 16px rgb(50 50 50 / 12%); border-radius: 5px;}
-
-.header{ width: 100%; height: 45px; border-bottom: 1px solid #e2e2e2; box-sizing: border-box; display: flex; gap: 5px; justify-content: space-between; align-items: center;}
+.sheader,
+.header{ width: 100%; height: 45px; border-bottom: 1px solid #e2e2e2; box-sizing: border-box; display: flex; gap: 5px; justify-content: space-between; align-items: center; margin-bottom: 15px;}
 .header>div{padding: 0px 10px;}
-.header>div.logo{text-transform: uppercase;  font-weight: bold; color: #F97A2E; font-size: 20px;}
+.header>div.logo{text-transform: uppercase; color: #F97A2E; font-weight: bold;  font-size: 20px;}
+
 .menu{width: 100%; height: 35px; border-bottom: 1px solid #e2e2e2; box-sizing: border-box; display: flex; justify-content: space-around; gap: 5px;  align-items: center;}
 
-.contant{flex-grow: 1; background-color: antiquewhite;}
+.sheader{display: flex; justify-content: space-between; align-items: center;font-weight: bold;  font-size: 15px;}
+
+.contant{flex-grow: 1; padding: 0px 20px 20px 20px;}
 
 .footer{ width: 100%; height: 50px; border-top: 1px solid #e2e2e2; box-sizing: border-box; display: flex; justify-content: space-around; gap: 5px; align-items: center;}
 
+.my_list{margin-bottom: 25PX;}
+.my_list>p{margin-bottom: 10px;}
+.my_list .tit{color: rgb(158, 158, 158); font-size: 12px;}
+.my_list .list{font-size: 16px;font-weight: 600; display: flex; justify-content: space-between; align-items: center;}
+
+.login_tit {font-size: 20px;font-weight: 800; margin-bottom: 30px;}
+.login_tit p{font-size: 14px; font-weight: 400;}
+
+.even_list{margin-bottom: 20px;}
+.even_list .el_con .tit{font-size: 12px; font-weight: 400; color: rgb(158, 158, 158); margin-bottom: 2px;}
+.even_list .el_con .con {font-size: 14px; font-weight: 600;}
+
+.img_Box{border-radius: 5px; overflow: hidden; margin-bottom: 5px;}
 
 @media (max-width: 1100px) {
   .Advertising {display: none;}
