@@ -3,10 +3,10 @@ import { Routes, Route, Link, Outlet } from 'react-router-dom'
 import Header from "../../components/index/header";
 import Menu from "../../components/index/menu";
 
-import Menu1 from '../../components/pages/menu1.js'
-import Menu2 from '../../components/pages/menu2.js'
-import Menu3 from '../../components/pages/menu3.js'
-import Menu4 from '../../components/pages/menu4.js'
+import First_purchase from '../../components/pages/first_purchase.js'
+import Real_time_sale from '../../components/pages/real_time_sale.js'
+import Best_product from '../../components/pages/best_product.js'
+import Set_product from '../../components/pages/set_product.js'
 
 import Home from '../../components/pages/home.js'
 import Search from '../../components/pages/search.js'
@@ -16,12 +16,12 @@ import My from '../../components/pages/my.js'
 export default function () {
 
     const Layout = () => {
-        return(
-           <>
+        return (
+            <>
                 <Header />
                 <Menu />
-                <Outlet/>
-           </>
+                <Outlet />
+            </>
         )
     }
 
@@ -29,23 +29,24 @@ export default function () {
         <>
             <div className="contant">
                 <Routes>
-                   
+
                     <Route path="/Search" element={<Search />} />
                     <Route path="/event" element={<Event />} />
                     <Route path="/my" element={<My />} />
 
                     <Route path="/" element={<Layout />}>
                         <Route path="/" exact element={<Home />} />
-                        <Route path="/menu1" element={<Menu1 />} />
-                        <Route path="/menu2" element={<Menu2 />} />
-                        <Route path="/menu3" element={<Menu3 />} />
-                        <Route path="/menu4" element={<Menu4 />} />
+                        <Route path="/first_purchase" element={<First_purchase />} />
+                        <Route path="/real_time_sale" element={<Real_time_sale />} />
+                        <Route path="/best_product" element={<Best_product />} />
+                        <Route path="/set_product" element={<Set_product />} />
                     </Route>
-                    
+
                 </Routes>
+
             </div>
         </>
-        
+
     );
 }
 

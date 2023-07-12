@@ -1,26 +1,26 @@
 let menuList = [
     {
-        menu: "메뉴1",
-        page: "menu1",
-        id:"1",
+        menu: "HBF 첫구매 추천",
+        page: "first_purchase",
+        id: "1",
     },
     {
-        menu: "메뉴2",
-        page: "menu2",
+        menu: "실시간 인기세일",
+        page: "real_time_sale",
         id: "2",
     },
     {
-        menu: "메뉴3",
-        page: "menu3",
+        menu: "베스트 상품",
+        page: "best_product",
         id: "3",
     },
     {
-        menu: "메뉴4",
-        page: "menu4",
+        menu: "세트 상품",
+        page: "set_product",
         id: "4",
     },
 ];
-export {menuList};
+export { menuList };
 
 
 let footerList = [
@@ -47,45 +47,74 @@ let footerList = [
 ];
 export { footerList };
 
-let loginList = [
-    {
-        tit: "기획전",
-        con: "기획/이벤트",
-        id: "1",
-    },
-    {
-        tit: "고객센터",
-        con: "공지사항",
-        id: "2",
-    },
-    {
-        tit: "기업 구매",
-        con: "기업 구매",
-        id: "3",
-    },
+let loginItemList = [
+    ["이벤트", "기획", "추천"],
+    ["고객센터", "공지사항"],
+    ["개인 구매", "단체 구매"]
 
 ];
-export { loginList };
+export { loginItemList };
 
 let eventList = [
     {
-        img:"../img/img1.jpg",
-        tit: "기획전",
+        img: "img/img0.png",
+        tit: "리엑트 이벤트",
         con: "기획/이벤트",
+        icon: "bolt",
         id: "1",
     },
     {
-        img: "../img/img2.jpg",
-        tit: "고객센터",
-        con: "공지사항",
+        img: "img/img1.jpg",
+        tit: "리엑트 이벤트1",
+        con: "기획/이벤트1",
+        icon: "deployed_code",
         id: "2",
     },
     {
-        img: "../img/img3.jpg",
-        tit: "기업 구매",
-        con: "기업 구매",
+        img: "img/img2.jpg",
+        tit: "리엑트 이벤트2",
+        con: "기획/이벤트2",
+        icon: "heart_minus",
         id: "3",
+    },
+    {
+        img: "img/img3.jpg",
+        tit: "리엑트 이벤트3",
+        con: "기획/이벤트3",
+        icon: "heart_check",
+        id: "4",
     },
 
 ];
 export { eventList };
+
+
+let often_list = [
+    {
+        tit: "리엑트 즐겨찾기",
+        icon: "bolt",
+        id: "1",
+    },
+    {
+        tit: "HTML 즐겨찾기",
+        icon: "deployed_code",
+        id: "2",
+    },
+    {
+        tit: "CSS 즐겨찾기",
+        icon: "heart_minus",
+        id: "3",
+    },
+    {
+        tit: "VUE 즐겨찾기",
+        icon: "heart_check",
+        id: "4",
+    },
+    {
+        tit: "SCSS 즐겨찾기",
+        icon: "troubleshoot",
+        id: "5",
+    },
+
+];
+export { often_list };
